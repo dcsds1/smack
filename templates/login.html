@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static), filename='css/login.css'}}">
+{% endblock %}
+
+
+{% block main %}
+    <h3 class="page-title">User Login</h3>
+    <form action="" method="POST">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Login</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
