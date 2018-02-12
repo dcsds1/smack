@@ -16,5 +16,13 @@ def login():
     else:
         return
 
+@app.route('/register/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('register.html')
+    else:
+        return
+
+
 if __name__ == '__main__':
     app.run()
