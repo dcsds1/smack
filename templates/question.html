@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Post your prediction{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block main %}
+    <h3>Post a prediction</h3>
+    <form action="" method="post">
+        <div class="form-container">
+            <div form="form-group">
+                <input type="text" placeholder="Please input title" name="title" class="form-control">
+            </div>
+            <div form="form-group">
+                <textarea name="content" rows="10" placeholder="Description" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">Post</button>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

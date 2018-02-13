@@ -48,6 +48,12 @@ def register():
                 db.session.commit()
                 return redirect(url_for('login'))
 
+@app.route('/question/')
+def question():
+    if request.method == 'GET':
+        return render_template('question')
+    else:
+        return
 
 if __name__ == '__main__':
     app.run()
